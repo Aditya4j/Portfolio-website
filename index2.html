@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Aditya Jadhav</title>
+    
+    <!-- External CSS and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <div class="logo">Aditya</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="logo">Aditya</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="https://image.similarpng.com/very-thumbnail/2021/01/Web-development,-programmer-engineering-and-coding-website-on-augmented-reality-interface-screens-on-transparent-background-PNG.png" alt="Aditya Jadhav">
+        </div>
+        <div class="hero-text">
+            <p class="intro">Hello, I'm</p>
+            <h1 class="name">Aditya Jadhav</h1>
+            <p class="profession">Software Developer</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.open('./dice_images/Aditya-Jadhav-9579342442-2024.pdf')">Download CV</button>
+                <button class="btn btn-secondary" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aditya-jadhav-64268b229" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Aditya4j" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <p class="section-subtitle">Get To Know More</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="./dice_images/me.jpg" alt="Aditya Jadhav">
+            </div>
+            <div class="about-content">
+                <div class="about-details">
+                    <div class="detail">
+                        <h3>Experience</h3>
+                        <p>Fresher<br>Software Developer</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Education</h3>
+                        <p>Bachelor of Engineering<br>Information Technology</p>
+                    </div>
+                </div>
+                <div class="about-description">
+                    <p>
+                        A motivated and detail-oriented aspiring software developer with a strong foundation in
+                        programming languages such as Python, SQL, and C#. Proficient in front-end web development with
+                        hands-on experience in HTML, CSS, and JavaScript. I am eager to apply my knowledge to real-world
+                        projects and continuously enhance my technical skills. I am a quick learner, passionate about
+                        problem-solving, and enthusiastic about beginning my career in the tech industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="./dice_images/html5-logo-31814.png" alt="HTML5">
+                <h3>HTML5</h3>
+                <p>Hypertext Markup Language for structuring web content.</p>
+            </div>
+            <div class="skill">
+                <img src="./dice_images/css5-logo.png" alt="CSS3">
+                <h3>CSS3</h3>
+                <p>Cascading Style Sheets for styling and layout.</p>
+            </div>
+            <div class="skill">
+                <img src="./dice_images/javascript-39404.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Programming language for interactive web applications.</p>
+            </div>
+            <div class="skill">
+                <img src="./dice_images/Csharp_Logo.png" alt="C#">
+                <h3>C#</h3>
+                <p>Object-oriented programming language for various applications.</p>
+            </div>
+            <div class="skill">
+                <img src="./dice_images/python.png" alt="Python">
+                <h3>Python</h3>
+                <p>High-level language for web development, data analysis, and more.</p>
+            </div>
+            <div class="skill">
+                <img src="./dice_images/sql.png" alt="SQL">
+                <h3>SQL</h3>
+                <p>Structured Query Language for managing databases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <p class="section-subtitle">My Projects</p>
+        <div class="projects-container">
+            <!-- Project One -->
+            <div class="project-card">
+                <h3>Smart Bridge</h3>
+                <p>
+                    Developed a system to monitor water levels and structural integrity of bridges using various sensors.
+                    Implemented real-time alerts to notify potential structural damage.
+                </p>
+                <a href="https://github.com/" class="btn btn-secondary" target="_blank">GitHub</a>
+            </div>
+
+            <!-- Project Two -->
+            <div class="project-card">
+                <h3>Library Management System</h3>
+                <p>
+                    Created a desktop application using C# to manage library operations efficiently. Features include
+                    book management, user management, and transaction tracking.
+                </p>
+                <a href="https://github.com/" class="btn btn-secondary" target="_blank">GitHub</a>
+            </div>
+
+            <!-- Project Three -->
+            <div class="project-card">
+                <h3>Web Scraping Tool</h3>
+                <p>
+                    Developed a tool to scrape and collect data from GitHub repositories based on various topics.
+                    Automated data extraction and storage into organized CSV files.
+                </p>
+                <a href="https://github.com/" class="btn btn-secondary" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <p class="section-subtitle">Contact Me</p>
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:adityajadhav5525@gmail.com">adityajadhav5525@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/aditya-jadhav-64268b229" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>&copy; 2024 Aditya Jadhav. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script2.js"></script>
+</body>
+</html>
